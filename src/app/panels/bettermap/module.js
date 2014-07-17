@@ -240,13 +240,9 @@ function (angular, app, _, L, localRequire) {
               });
 
               // This could be made configurable?
-<<<<<<< HEAD
               L.tileLayer('https://ssl_tiles.cloudmade.com/57cbb6ca8cac418dbb1a402586df4528/37686/256/{z}/{x}/{y}.png', {
-=======
-              L.tileLayer('http://otile1.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.jpg', {
                 attribution: 'Data, imagery and map information provided by MapQuest, '+
                   'OpenStreetMap <http://www.openstreetmap.org/copyright> and contributors, ODbL',
->>>>>>> upstream/master
                 maxZoom: 18,
                 minZoom: 2
               }).addTo(map);

@@ -339,15 +339,7 @@ function (angular, app, _, kbn) {
         return;
       }
 
-<<<<<<< HEAD
-      sort = [$scope.ejs.Sort($scope.panel.sort[0]).order($scope.panel.sort[1])];
-=======
       sort = [$scope.ejs.Sort($scope.panel.sort[0]).order($scope.panel.sort[1]).ignoreUnmapped(true)];
-      if($scope.panel.localTime) {
-        sort.push($scope.ejs.Sort($scope.panel.timeField).order($scope.panel.sort[1]).ignoreUnmapped(true));
-      }
-
->>>>>>> upstream/master
 
       $scope.panelMeta.loading = true;
 
