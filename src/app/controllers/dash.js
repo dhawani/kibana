@@ -26,6 +26,9 @@ function (angular, config, _, timezoneJS) {
     $scope.panelMoveOver = panelMove.onOver;
     $scope.panelMoveOut = panelMove.onOut;
 
+    angular.element(window).bind('resize', function(){
+      $scope.$broadcast('render');
+    });
 
     $scope.init = function() {
       $scope.config = config;
